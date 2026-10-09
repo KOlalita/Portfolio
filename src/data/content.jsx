@@ -424,6 +424,9 @@ export const WINDOWS = {
               'Full primary and secondary education with a bilingual English/Spanish focus.'
             )}
           </li>
+          <li>
+            <strong>2024 — 2026</strong> · {t('Formación Autodidacta', 'Self-taught Education')} —{' '}
+          </li>
         </ul>
 
         <h2>{t('Proyectos', 'Projects')}</h2>
