@@ -1,0 +1,73 @@
+/*
+ * GENERADO POR scripts/gen-cursors.py — no editar a mano.
+ * Punteros retro en pixel art: negro con contorno blanco de 1 px,
+ * ampliados x1.4 para que se vean los pixeles.
+ */
+
+:root {
+  --cur-arrow: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='19.6' height='29.4' viewBox='0 0 14 21' shape-rendering='crispEdges'><path d='M0 0h3v1h-3zM0 1h1v1h-1zM2 1h2v1h-2zM0 2h1v1h-1zM3 2h2v1h-2zM0 3h1v1h-1zM4 3h2v1h-2zM0 4h1v1h-1zM5 4h2v1h-2zM0 5h1v1h-1zM6 5h2v1h-2zM0 6h1v1h-1zM7 6h2v1h-2zM0 7h1v1h-1zM8 7h2v1h-2zM0 8h1v1h-1zM9 8h2v1h-2zM0 9h1v1h-1zM10 9h2v1h-2zM0 10h1v1h-1zM11 10h2v1h-2zM0 11h1v1h-1zM12 11h2v1h-2zM0 12h1v1h-1zM13 12h1v1h-1zM0 13h1v1h-1zM9 13h5v1h-5zM0 14h1v1h-1zM9 14h1v1h-1zM0 15h1v1h-1zM4 15h2v1h-2zM9 15h1v1h-1zM0 16h1v1h-1zM3 16h3v1h-3zM9 16h2v1h-2zM0 17h1v1h-1zM2 17h2v1h-2zM5 17h2v1h-2zM10 17h1v1h-1zM0 18h3v1h-3zM6 18h1v1h-1zM10 18h1v1h-1zM6 19h2v1h-2zM10 19h1v1h-1zM7 20h4v1h-4z' fill='%23fff'/><path d='M1 1h1v1h-1zM1 2h2v1h-2zM1 3h3v1h-3zM1 4h4v1h-4zM1 5h5v1h-5zM1 6h6v1h-6zM1 7h7v1h-7zM1 8h8v1h-8zM1 9h9v1h-9zM1 10h10v1h-10zM1 11h11v1h-11zM1 12h12v1h-12zM1 13h8v1h-8zM1 14h8v1h-8zM1 15h3v1h-3zM6 15h3v1h-3zM1 16h2v1h-2zM6 16h3v1h-3zM1 17h1v1h-1zM7 17h3v1h-3zM7 18h3v1h-3zM8 19h2v1h-2z' fill='%23000'/></svg>");
+  --cur-hand: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='21' height='25.2' viewBox='0 0 15 18' shape-rendering='crispEdges'><path d='M4 0h5v1h-5zM4 1h1v1h-1zM8 1h1v1h-1zM4 2h1v1h-1zM8 2h1v1h-1zM4 3h1v1h-1zM8 3h1v1h-1zM4 4h1v1h-1zM8 4h1v1h-1zM4 5h1v1h-1zM8 5h4v1h-4zM4 6h1v1h-1zM8 6h1v1h-1zM11 6h4v1h-4zM1 7h4v1h-4zM8 7h1v1h-1zM11 7h1v1h-1zM14 7h1v1h-1zM1 8h1v1h-1zM4 8h1v1h-1zM8 8h1v1h-1zM11 8h1v1h-1zM14 8h1v1h-1zM1 9h1v1h-1zM7 9h1v1h-1zM10 9h1v1h-1zM13 9h2v1h-2zM1 10h1v1h-1zM14 10h1v1h-1zM1 11h1v1h-1zM14 11h1v1h-1zM1 12h1v1h-1zM14 12h1v1h-1zM1 13h1v1h-1zM14 13h1v1h-1zM1 14h2v1h-2zM14 14h1v1h-1zM2 15h1v1h-1zM13 15h2v1h-2zM2 16h2v1h-2zM13 16h1v1h-1zM3 17h11v1h-11z' fill='%23fff'/><path d='M5 1h3v1h-3zM5 2h3v1h-3zM5 3h3v1h-3zM5 4h3v1h-3zM5 5h3v1h-3zM5 6h3v1h-3zM9 6h2v1h-2zM5 7h3v1h-3zM9 7h2v1h-2zM12 7h2v1h-2zM2 8h2v1h-2zM5 8h3v1h-3zM9 8h2v1h-2zM12 8h2v1h-2zM2 9h5v1h-5zM8 9h2v1h-2zM11 9h2v1h-2zM2 10h12v1h-12zM2 11h12v1h-12zM2 12h12v1h-12zM2 13h12v1h-12zM3 14h11v1h-11zM3 15h10v1h-10zM4 16h9v1h-9z' fill='%23000'/></svg>");
+  --cur-wait: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='19.6' height='25.2' viewBox='0 0 14 18' shape-rendering='crispEdges'><path d='M0 0h14v1h-14zM0 1h1v1h-1zM13 1h1v1h-1zM0 2h1v1h-1zM2 2h10v1h-10zM13 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM11 3h1v1h-1zM13 3h1v1h-1zM0 4h2v1h-2zM3 4h2v1h-2zM9 4h2v1h-2zM12 4h2v1h-2zM1 5h1v1h-1zM3 5h3v1h-3zM8 5h3v1h-3zM12 5h1v1h-1zM1 6h2v1h-2zM4 6h2v1h-2zM8 6h2v1h-2zM11 6h2v1h-2zM2 7h1v1h-1zM4 7h2v1h-2zM8 7h2v1h-2zM11 7h1v1h-1zM2 8h2v1h-2zM5 8h1v1h-1zM8 8h1v1h-1zM10 8h2v1h-2zM2 9h2v1h-2zM5 9h1v1h-1zM8 9h1v1h-1zM10 9h2v1h-2zM2 10h1v1h-1zM4 10h2v1h-2zM8 10h2v1h-2zM11 10h1v1h-1zM1 11h2v1h-2zM4 11h2v1h-2zM8 11h2v1h-2zM11 11h2v1h-2zM1 12h1v1h-1zM3 12h3v1h-3zM8 12h3v1h-3zM12 12h1v1h-1zM0 13h2v1h-2zM3 13h2v1h-2zM9 13h2v1h-2zM12 13h2v1h-2zM0 14h1v1h-1zM2 14h1v1h-1zM11 14h1v1h-1zM13 14h1v1h-1zM0 15h1v1h-1zM2 15h10v1h-10zM13 15h1v1h-1zM0 16h1v1h-1zM13 16h1v1h-1zM0 17h14v1h-14z' fill='%23fff'/><path d='M1 1h12v1h-12zM1 2h1v1h-1zM12 2h1v1h-1zM1 3h1v1h-1zM3 3h8v1h-8zM12 3h1v1h-1zM2 4h1v1h-1zM5 4h4v1h-4zM11 4h1v1h-1zM2 5h1v1h-1zM6 5h2v1h-2zM11 5h1v1h-1zM3 6h1v1h-1zM6 6h2v1h-2zM10 6h1v1h-1zM3 7h1v1h-1zM6 7h2v1h-2zM10 7h1v1h-1zM4 8h1v1h-1zM6 8h2v1h-2zM9 8h1v1h-1zM4 9h1v1h-1zM6 9h2v1h-2zM9 9h1v1h-1zM3 10h1v1h-1zM6 10h2v1h-2zM10 10h1v1h-1zM3 11h1v1h-1zM6 11h2v1h-2zM10 11h1v1h-1zM2 12h1v1h-1zM6 12h2v1h-2zM11 12h1v1h-1zM2 13h1v1h-1zM5 13h4v1h-4zM11 13h1v1h-1zM1 14h1v1h-1zM3 14h8v1h-8zM12 14h1v1h-1zM1 15h1v1h-1zM12 15h1v1h-1zM1 16h12v1h-12z' fill='%23000'/></svg>");
+  --cur-text: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12.6' height='23.8' viewBox='0 0 9 17' shape-rendering='crispEdges'><path d='M0 0h9v1h-9zM0 1h1v1h-1zM8 1h1v1h-1zM0 2h4v1h-4zM5 2h4v1h-4zM3 3h1v1h-1zM5 3h1v1h-1zM3 4h1v1h-1zM5 4h1v1h-1zM3 5h1v1h-1zM5 5h1v1h-1zM3 6h1v1h-1zM5 6h1v1h-1zM3 7h1v1h-1zM5 7h1v1h-1zM3 8h1v1h-1zM5 8h1v1h-1zM3 9h1v1h-1zM5 9h1v1h-1zM3 10h1v1h-1zM5 10h1v1h-1zM3 11h1v1h-1zM5 11h1v1h-1zM3 12h1v1h-1zM5 12h1v1h-1zM3 13h1v1h-1zM5 13h1v1h-1zM0 14h4v1h-4zM5 14h4v1h-4zM0 15h1v1h-1zM8 15h1v1h-1zM0 16h9v1h-9z' fill='%23fff'/><path d='M1 1h7v1h-7zM4 2h1v1h-1zM4 3h1v1h-1zM4 4h1v1h-1zM4 5h1v1h-1zM4 6h1v1h-1zM4 7h1v1h-1zM4 8h1v1h-1zM4 9h1v1h-1zM4 10h1v1h-1zM4 11h1v1h-1zM4 12h1v1h-1zM4 13h1v1h-1zM4 14h1v1h-1zM1 15h7v1h-7z' fill='%23000'/></svg>");
+  --cur-ns: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='15.4' height='26.6' viewBox='0 0 11 19' shape-rendering='crispEdges'><path d='M4 0h3v1h-3zM3 1h2v1h-2zM6 1h2v1h-2zM2 2h2v1h-2zM7 2h2v1h-2zM1 3h2v1h-2zM8 3h2v1h-2zM1 4h1v1h-1zM9 4h1v1h-1zM1 5h4v1h-4zM6 5h4v1h-4zM4 6h1v1h-1zM6 6h1v1h-1zM4 7h1v1h-1zM6 7h1v1h-1zM4 8h1v1h-1zM6 8h1v1h-1zM4 9h1v1h-1zM6 9h1v1h-1zM4 10h1v1h-1zM6 10h1v1h-1zM4 11h1v1h-1zM6 11h1v1h-1zM4 12h1v1h-1zM6 12h1v1h-1zM1 13h4v1h-4zM6 13h4v1h-4zM1 14h1v1h-1zM9 14h1v1h-1zM1 15h2v1h-2zM8 15h2v1h-2zM2 16h2v1h-2zM7 16h2v1h-2zM3 17h2v1h-2zM6 17h2v1h-2zM4 18h3v1h-3z' fill='%23fff'/><path d='M5 1h1v1h-1zM4 2h3v1h-3zM3 3h5v1h-5zM2 4h7v1h-7zM5 5h1v1h-1zM5 6h1v1h-1zM5 7h1v1h-1zM5 8h1v1h-1zM5 9h1v1h-1zM5 10h1v1h-1zM5 11h1v1h-1zM5 12h1v1h-1zM5 13h1v1h-1zM2 14h7v1h-7zM3 15h5v1h-5zM4 16h3v1h-3zM5 17h1v1h-1z' fill='%23000'/></svg>");
+  --cur-ew: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='26.6' height='15.4' viewBox='0 0 19 11' shape-rendering='crispEdges'><path d='M3 1h3v1h-3zM13 1h3v1h-3zM2 2h2v1h-2zM5 2h1v1h-1zM13 2h1v1h-1zM15 2h2v1h-2zM1 3h2v1h-2zM5 3h1v1h-1zM13 3h1v1h-1zM16 3h2v1h-2zM0 4h2v1h-2zM5 4h9v1h-9zM17 4h2v1h-2zM0 5h1v1h-1zM18 5h1v1h-1zM0 6h2v1h-2zM5 6h9v1h-9zM17 6h2v1h-2zM1 7h2v1h-2zM5 7h1v1h-1zM13 7h1v1h-1zM16 7h2v1h-2zM2 8h2v1h-2zM5 8h1v1h-1zM13 8h1v1h-1zM15 8h2v1h-2zM3 9h3v1h-3zM13 9h3v1h-3z' fill='%23fff'/><path d='M4 2h1v1h-1zM14 2h1v1h-1zM3 3h2v1h-2zM14 3h2v1h-2zM2 4h3v1h-3zM14 4h3v1h-3zM1 5h17v1h-17zM2 6h3v1h-3zM14 6h3v1h-3zM3 7h2v1h-2zM14 7h2v1h-2zM4 8h1v1h-1zM14 8h1v1h-1z' fill='%23000'/></svg>");
+  --cur-nwse: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='25.2' height='25.2' viewBox='0 0 18 18' shape-rendering='crispEdges'><path d='M0 0h7v1h-7zM0 1h1v1h-1zM6 1h1v1h-1zM0 2h1v1h-1zM5 2h2v1h-2zM0 3h1v1h-1zM5 3h2v1h-2zM0 4h1v1h-1zM6 4h2v1h-2zM0 5h1v1h-1zM2 5h2v1h-2zM7 5h2v1h-2zM0 6h5v1h-5zM8 6h2v1h-2zM4 7h2v1h-2zM9 7h2v1h-2zM5 8h2v1h-2zM10 8h2v1h-2zM6 9h2v1h-2zM11 9h2v1h-2zM7 10h2v1h-2zM12 10h2v1h-2zM8 11h2v1h-2zM13 11h5v1h-5zM9 12h2v1h-2zM14 12h2v1h-2zM17 12h1v1h-1zM10 13h2v1h-2zM17 13h1v1h-1zM11 14h2v1h-2zM17 14h1v1h-1zM11 15h2v1h-2zM17 15h1v1h-1zM11 16h1v1h-1zM17 16h1v1h-1zM11 17h7v1h-7z' fill='%23fff'/><path d='M1 1h5v1h-5zM1 2h4v1h-4zM1 3h4v1h-4zM1 4h5v1h-5zM1 5h1v1h-1zM4 5h3v1h-3zM5 6h3v1h-3zM6 7h3v1h-3zM7 8h3v1h-3zM8 9h3v1h-3zM9 10h3v1h-3zM10 11h3v1h-3zM11 12h3v1h-3zM16 12h1v1h-1zM12 13h5v1h-5zM13 14h4v1h-4zM13 15h4v1h-4zM12 16h5v1h-5z' fill='%23000'/></svg>");
+  --cur-nesw: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='25.2' height='25.2' viewBox='0 0 18 18' shape-rendering='crispEdges'><path d='M11 0h7v1h-7zM11 1h1v1h-1zM17 1h1v1h-1zM11 2h2v1h-2zM17 2h1v1h-1zM11 3h2v1h-2zM17 3h1v1h-1zM10 4h2v1h-2zM17 4h1v1h-1zM9 5h2v1h-2zM14 5h2v1h-2zM17 5h1v1h-1zM8 6h2v1h-2zM13 6h5v1h-5zM7 7h2v1h-2zM12 7h2v1h-2zM6 8h2v1h-2zM11 8h2v1h-2zM5 9h2v1h-2zM10 9h2v1h-2zM4 10h2v1h-2zM9 10h2v1h-2zM0 11h5v1h-5zM8 11h2v1h-2zM0 12h1v1h-1zM2 12h2v1h-2zM7 12h2v1h-2zM0 13h1v1h-1zM6 13h2v1h-2zM0 14h1v1h-1zM5 14h2v1h-2zM0 15h1v1h-1zM5 15h2v1h-2zM0 16h1v1h-1zM6 16h1v1h-1zM0 17h7v1h-7z' fill='%23fff'/><path d='M12 1h5v1h-5zM13 2h4v1h-4zM13 3h4v1h-4zM12 4h5v1h-5zM11 5h3v1h-3zM16 5h1v1h-1zM10 6h3v1h-3zM9 7h3v1h-3zM8 8h3v1h-3zM7 9h3v1h-3zM6 10h3v1h-3zM5 11h3v1h-3zM1 12h1v1h-1zM4 12h3v1h-3zM1 13h5v1h-5zM1 14h4v1h-4zM1 15h4v1h-4zM1 16h5v1h-5z' fill='%23000'/></svg>");
+}
+
+.cur--arrow {
+  width: 19.6px;
+  height: 29.4px;
+  --hx: 1.4px;
+  --hy: 1.4px;
+  background-image: var(--cur-arrow);
+}
+.cur--hand {
+  width: 21px;
+  height: 25.2px;
+  --hx: 8.4px;
+  --hy: 1.4px;
+  background-image: var(--cur-hand);
+}
+.cur--wait {
+  width: 19.6px;
+  height: 25.2px;
+  --hx: 9.8px;
+  --hy: 12.6px;
+  background-image: var(--cur-wait);
+}
+.cur--text {
+  width: 12.6px;
+  height: 23.8px;
+  --hx: 5.6px;
+  --hy: 11.2px;
+  background-image: var(--cur-text);
+}
+.cur--ns {
+  width: 15.4px;
+  height: 26.6px;
+  --hx: 7px;
+  --hy: 12.6px;
+  background-image: var(--cur-ns);
+}
+.cur--ew {
+  width: 26.6px;
+  height: 15.4px;
+  --hx: 12.6px;
+  --hy: 7px;
+  background-image: var(--cur-ew);
+}
+.cur--nwse {
+  width: 25.2px;
+  height: 25.2px;
+  --hx: 12.6px;
+  --hy: 12.6px;
+  background-image: var(--cur-nwse);
+}
+.cur--nesw {
+  width: 25.2px;
+  height: 25.2px;
+  --hx: 12.6px;
+  --hy: 12.6px;
+  background-image: var(--cur-nesw);
+}

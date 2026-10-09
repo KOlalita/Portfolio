@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 383">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="46%" r="72%">
+      <stop offset="0%" stop-color="#2b1b4d"/>
+      <stop offset="45%" stop-color="#160f2b"/>
+      <stop offset="100%" stop-color="#07060e"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e9d4ff" stop-opacity=".55"/>
+      <stop offset="45%" stop-color="#a06fd8" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#7b4bb8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="p1" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#6b3fa8" stop-opacity=".9"/>
+      <stop offset="55%" stop-color="#c792ea" stop-opacity=".62"/>
+      <stop offset="100%" stop-color="#f2a8d8" stop-opacity=".12"/>
+    </linearGradient>
+    <linearGradient id="p2" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#2a4a8f" stop-opacity=".9"/>
+      <stop offset="55%" stop-color="#67d4e8" stop-opacity=".5"/>
+      <stop offset="100%" stop-color="#b8f0ff" stop-opacity=".1"/>
+    </linearGradient>
+    <linearGradient id="p3" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#8f2d6b" stop-opacity=".85"/>
+      <stop offset="55%" stop-color="#e0529c" stop-opacity=".5"/>
+      <stop offset="100%" stop-color="#ffc3e0" stop-opacity=".1"/>
+    </linearGradient>
+    <linearGradient id="p4" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#3b2a7a" stop-opacity=".88"/>
+      <stop offset="60%" stop-color="#8a6fe0" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#d9c8ff" stop-opacity=".08"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#ffffff" stop-opacity=".30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="50%" cy="46%" r="62%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity=".62"/>
+    </radialGradient>
+    <path id="pet" d="M0 0 C -36 -44, -42 -104, 0 -152 C 42 -104, 36 -44, 0 0 Z"/>
+    <path id="pets" d="M0 0 C -24 -30, -28 -70, 0 -104 C 28 -70, 24 -30, 0 0 Z"/>
+  </defs>
+
+  <rect x="0" y="0" width="680" height="383" fill="url(#sky)"/>
+
+  <g transform="translate(340,196)" opacity=".5">
+    <use href="#pet" fill="url(#p4)" transform="rotate(14) scale(1.5)"/>
+    <use href="#pet" fill="url(#p2)" transform="rotate(86) scale(1.42)"/>
+    <use href="#pet" fill="url(#p4)" transform="rotate(158) scale(1.5)"/>
+    <use href="#pet" fill="url(#p3)" transform="rotate(230) scale(1.42)"/>
+    <use href="#pet" fill="url(#p4)" transform="rotate(302) scale(1.5)"/>
+  </g>
+
+  <circle cx="340" cy="192" r="178" fill="url(#core)"/>
+
+  <g transform="translate(340,196)" opacity=".92">
+    <use href="#pet" fill="url(#p1)" transform="rotate(-6) scale(1.12)"/>
+    <use href="#pet" fill="url(#p2)" transform="rotate(52) scale(1.02)"/>
+    <use href="#pet" fill="url(#p3)" transform="rotate(108) scale(1.18)"/>
+    <use href="#pet" fill="url(#p4)" transform="rotate(166) scale(1.06)"/>
+    <use href="#pet" fill="url(#p1)" transform="rotate(214) scale(1.14)"/>
+    <use href="#pet" fill="url(#p2)" transform="rotate(268) scale(0.98)"/>
+    <use href="#pet" fill="url(#p3)" transform="rotate(322) scale(1.1)"/>
+  </g>
+
+  <g transform="translate(340,196)" opacity=".85">
+    <use href="#pets" fill="url(#p1)" transform="rotate(22) scale(1.08)"/>
+    <use href="#pets" fill="url(#p3)" transform="rotate(78) scale(0.92)"/>
+    <use href="#pets" fill="url(#p2)" transform="rotate(140) scale(1.12)"/>
+    <use href="#pets" fill="url(#p1)" transform="rotate(196) scale(0.96)"/>
+    <use href="#pets" fill="url(#p4)" transform="rotate(250) scale(1.06)"/>
+    <use href="#pets" fill="url(#p3)" transform="rotate(300) scale(0.9)"/>
+  </g>
+
+  <g transform="translate(340,196)" fill="none" stroke="url(#edge)" stroke-width="0.9">
+    <use href="#pet" transform="rotate(-6) scale(1.12)"/>
+    <use href="#pet" transform="rotate(108) scale(1.18)"/>
+    <use href="#pet" transform="rotate(214) scale(1.14)"/>
+    <use href="#pets" transform="rotate(78) scale(0.92)"/>
+    <use href="#pets" transform="rotate(250) scale(1.06)"/>
+  </g>
+
+  <circle cx="340" cy="196" r="26" fill="#f3e6ff" opacity=".20"/>
+  <circle cx="340" cy="196" r="11" fill="#ffffff" opacity=".30"/>
+
+  <g fill="#ffffff">
+    <circle cx="126" cy="92" r="2.4" opacity=".30"/>
+    <circle cx="214" cy="304" r="1.7" opacity=".22"/>
+    <circle cx="552" cy="118" r="2.1" opacity=".26"/>
+    <circle cx="488" cy="316" r="1.5" opacity=".20"/>
+    <circle cx="96" cy="238" r="1.6" opacity=".18"/>
+    <circle cx="606" cy="236" r="1.9" opacity=".22"/>
+    <circle cx="268" cy="54" r="1.4" opacity=".20"/>
+    <circle cx="430" cy="48" r="1.8" opacity=".24"/>
+  </g>
+
+  <rect x="0" y="0" width="680" height="383" fill="url(#vig)"/>
+</svg>
