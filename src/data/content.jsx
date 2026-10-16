@@ -25,12 +25,12 @@ export const PROFILE = {
 }
 
 /*
- * Repositorios por proyecto. En null mientras el repo sea privado: la ventana
+ * Repositorios por proyecto. En null si el repo es privado: la ventana
  * muestra una nota en vez de un boton que no lleva a ningun sitio.
  */
 const REPOS = {
-  cutzen: null,
-  remafeed: null,
+  cutzen: 'https://github.com/KOlalita/CutZen',
+  remafeed: 'https://github.com/KOlalita/RemaFeed',
 }
 
 /* Ficha corta de la bienvenida. Los valores son funciones de `t`. */
@@ -261,7 +261,7 @@ export const WINDOWS = {
           {t('Plataforma de reservas para barberias', 'Booking platform for barbershops')}
         </p>
         <div className="chips">
-          {['C#', '.NET 8', 'ASP.NET Core', 'EF Core', 'SQL Server', 'JWT', 'React', 'Tailwind'].map((x) => (
+          {['C#', '.NET 8', 'ASP.NET Core', 'EF Core', 'SQL Server', 'JWT', 'BCrypt', 'Swagger', 'React 19', 'Vite', 'Tailwind 4'].map((x) => (
             <span className="chip" key={x}>{x}</span>
           ))}
         </div>
@@ -272,6 +272,33 @@ export const WINDOWS = {
             'A .NET REST API with a React client where three roles coexist: client, barber and admin. Each signs into the same application and gets a different dashboard.'
           )}
         </p>
+        <h2>{t('Funcionalidades', 'Features')}</h2>
+        <ul>
+          <li>
+            {t(
+              'Cliente: reserva con servicio, barbero y hueco horario; pago con tarjeta, efectivo o pago movil; historial, perfil y modo oscuro.',
+              'Client: books by service, barber and time slot; pays by card, cash or mobile payment; history, profile and dark mode.'
+            )}
+          </li>
+          <li>
+            {t(
+              'Barbero: agenda propia, cambio de estado de las citas (pendiente, cancelada, completada) y estadisticas.',
+              'Barber: own agenda, appointment status changes (pending, canceled, completed) and stats.'
+            )}
+          </li>
+          <li>
+            {t(
+              'Administrador: usuarios, catalogo de servicios con imagen, todas las citas y horario semanal de cada barbero.',
+              'Admin: users, service catalogue with images, all appointments and each barber’s weekly schedule.'
+            )}
+          </li>
+          <li>
+            {t(
+              'API documentada con Swagger y rutas del cliente protegidas por rol.',
+              'API documented with Swagger and client routes guarded by role.'
+            )}
+          </li>
+        </ul>
         <h2>{t('Lo que resuelve', 'What it solves')}</h2>
         <ul>
           <li>
@@ -335,7 +362,20 @@ export const WINDOWS = {
           )}
         </p>
         <div className="chips">
-          {['C#', '.NET 10', 'ASP.NET Core', 'EF Core', 'PostgreSQL', 'Supabase', 'React', 'TypeScript'].map(
+          {[
+            'C#',
+            '.NET 10',
+            'ASP.NET Core',
+            'EF Core',
+            'PostgreSQL',
+            'Supabase',
+            'AngleSharp',
+            'Web Push',
+            'Docker',
+            'React 19',
+            'TypeScript',
+            'Tailwind 4',
+          ].map(
             (x) => (
               <span className="chip" key={x}>{x}</span>
             )
@@ -348,6 +388,33 @@ export const WINDOWS = {
             'Judicial auctions are published on REMAJU, but finding and following them is awkward. RemaFeed crawls them on a schedule and layers discovery, tracking and alerts on top.'
           )}
         </p>
+        <h2>{t('Funcionalidades', 'Features')}</h2>
+        <ul>
+          <li>
+            {t(
+              'Feed personalizado de un remate a la vez, ordenado por el perfil y la region del usuario.',
+              'Personalised one-auction-at-a-time feed, ranked by the user’s profile and region.'
+            )}
+          </li>
+          <li>
+            {t(
+              'Explorar con filtros por region, tipo de inmueble, precio y estado, guardados en la URL para compartirlos.',
+              'Explore with filters by region, property type, price and status, kept in the URL so they can be shared.'
+            )}
+          </li>
+          <li>
+            {t(
+              'Favoritos, historial, detalle completo con fotos y cronograma, y alertas con notificaciones push.',
+              'Favourites, history, a full detail page with photos and schedule, and alerts with push notifications.'
+            )}
+          </li>
+          <li>
+            {t(
+              'Ingesta de REMAJU con frecuencia proporcional al cierre de cada fase; la fase y la urgencia se calculan al leer.',
+              'REMAJU ingestion with a frequency proportional to each phase’s deadline; phase and urgency are computed at read time.'
+            )}
+          </li>
+        </ul>
         <h2>{t('Como esta construido', 'How it is built')}</h2>
         <ul>
           <li>

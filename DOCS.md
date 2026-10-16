@@ -232,9 +232,9 @@ detrás, y la minimiza si ya estaba enfocada.
 - **Foto**: `PROFILE.avatar` apunta a un gatito de `placecats.com`. Sustituir
   por una foto propia en `public/` (por ejemplo `'/avatar.jpg'`); si la imagen
   falla, `Welcome.jsx` cae en un avatar SVG local.
-- **Repositorios**: la constante `REPOS` de `content.jsx` tiene `cutzen` y
-  `remafeed` en `null` porque ambos repos son privados. Al publicarlos, poner
-  la URL ahí y el botón "Repository" aparece solo.
+- **Repositorios**: la constante `REPOS` de `content.jsx` apunta ya a
+  `github.com/KOlalita/CutZen` y `github.com/KOlalita/RemaFeed`. Pon `null` si
+  alguno vuelve a ser privado y el botón se sustituye por una nota.
 - **Datos del PDF**: el CV incluye domicilio completo y teléfono, y ahora se
   ve dentro del sitio además de descargarse. Si no quieres publicarlos, hay que
   generar una versión del PDF sin esos campos y volver a correr `cv:render`.
