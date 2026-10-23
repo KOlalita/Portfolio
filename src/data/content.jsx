@@ -100,11 +100,11 @@ export const WINDOWS = {
           <li>{t('C# y .NET como terreno principal.', 'C# and .NET as my main ground.')}</li>
           <li>
             {t(
-              'Escribo la documentacion antes que el codigo cuando el problema lo merece.',
-              'I write the documentation before the code when the problem deserves it.'
+              'Trabajo con la metodologia SDD para trabajos mas complejos y evitar las alucinaciones de la AI.',
+              'I work with the SDD methodology for more complex projects and to avoid AI hallucinations.'
             )}
           </li>
-          <li>{t('Español nativo, ingles B2.', 'Native Spanish, B2 English.')}</li>
+          <li>{t('Español nativo, ingles B2, frances A2', 'Native Spanish, B2 English, A2 French.')}</li>
         </ul>
         <p className="hint">
           {t('Siguiente paso:', 'Next step:')} <code>open new --Projects</code>
