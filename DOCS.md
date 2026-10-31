@@ -35,7 +35,7 @@ npm run dev
 | `neofetch` | Ficha del sistema |
 | `clear` | Limpia la terminal y reimprime la ficha (alias `cls`, o `Ctrl/Cmd+L`) |
 
-Ventanas: `AboutMe`, `Skills`, `Tech`, `Projects`, `Cutzen`, `RemaFeed`, `CV`,
+Ventanas: `AboutMe`, `Skills`, `Tech`, `Projects`, `Cutzen`, `RemaFeed`, `Spotta`, `CV`,
 `CV.pdf`, `Contact`.
 
 Atajos de edición: `Tab` autocompleta comandos y nombres de ventana, `↑`/`↓`
@@ -233,7 +233,7 @@ detrás, y la minimiza si ya estaba enfocada.
   por una foto propia en `public/` (por ejemplo `'/avatar.jpg'`); si la imagen
   falla, `Welcome.jsx` cae en un avatar SVG local.
 - **Repositorios**: la constante `REPOS` de `content.jsx` apunta ya a
-  `github.com/KOlalita/CutZen` y `github.com/KOlalita/RemaFeed`. Pon `null` si
+  `github.com/KOlalita/CutZen`, `github.com/KOlalita/RemaFeed` y `github.com/KOlalita/Spotta`. Pon `null` si
   alguno vuelve a ser privado y el botón se sustituye por una nota.
 - **Datos del PDF**: el CV incluye domicilio completo y teléfono, y ahora se
   ve dentro del sitio además de descargarse. Si no quieres publicarlos, hay que

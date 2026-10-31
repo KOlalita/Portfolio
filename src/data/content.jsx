@@ -31,13 +31,14 @@ export const PROFILE = {
 const REPOS = {
   cutzen: 'https://github.com/KOlalita/CutZen',
   remafeed: 'https://github.com/KOlalita/RemaFeed',
+  spotta: 'https://github.com/KOlalita/Spotta',
 }
 
 /* Ficha corta de la bienvenida. Los valores son funciones de `t`. */
 export const FACTS = [
   { k: 'Role', v: () => PROFILE.role },
   { k: 'Focus', v: (t) => t('Backend · Aplicaciones web', 'Backend · Web Applications') },
-  { k: 'Stack', v: () => 'C# · .NET · SQL Server · React' },
+  { k: 'Stack', v: () => 'C# · .NET · SQL Server · SQLite · React · React Native' },
   {
     k: 'Learning',
     v: (t) => t('Arquitectura de sistemas · Bases de datos', 'System architecture · Databases'),
@@ -133,12 +134,19 @@ export const WINDOWS = {
         <ul>
           <li>Microsoft SQL Server</li>
           <li>PostgreSQL (Supabase)</li>
+          <li>SQLite ({t('almacenamiento local en el dispositivo', 'on-device local storage')})</li>
         </ul>
         <h2>Frontend</h2>
         <ul>
           <li>React, TypeScript, Vite, React Router</li>
           <li>Tailwind CSS, Bootstrap, {t('CSS moderno', 'modern CSS')}</li>
           <li>ASP.NET Razor, HTML, JavaScript</li>
+        </ul>
+        <h2>{t('Movil', 'Mobile')}</h2>
+        <ul>
+          <li>React Native, TypeScript</li>
+          <li>{t('Arquitectura Local First con SQLite', 'Local-first architecture with SQLite')}</li>
+          <li>{t('Escaneo de codigos QR y notificaciones', 'QR code scanning and notifications')}</li>
         </ul>
         <h2>{t('Practicas', 'Practices')}</h2>
         <ul>
@@ -185,7 +193,9 @@ export const WINDOWS = {
             'ASP.NET Core',
             'EF Core',
             'SQL Server',
+            'SQLite',
             'React',
+            'React Native',
             'TypeScript',
             'Vite',
             'Tailwind',
@@ -242,6 +252,16 @@ export const WINDOWS = {
               )}
             </span>
             <span className="card__cmd">open new --RemaFeed</span>
+          </button>
+          <button className="card" onClick={() => open('spotta')}>
+            <span className="card__title">Spotta</span>
+            <span className="card__desc">
+              {t(
+                'App movil para gimnasios: acceso con QR segun el plan del socio.',
+                'Mobile gym app: QR-code entry based on the member’s plan.'
+              )}
+            </span>
+            <span className="card__cmd">open new --Spotta</span>
           </button>
         </div>
       </>
@@ -462,6 +482,95 @@ export const WINDOWS = {
     ),
   },
 
+  spotta: {
+    id: 'spotta',
+    title: 'spotta — README.md',
+    label: 'Spotta',
+    icon: '[ 3 ]',
+    size: { w: 600, h: 500 },
+    body: ({ t }) => (
+      <>
+        <h1>Spotta</h1>
+        <p className="subtitle">
+          {t(
+            'Control de acceso para gimnasios mediante codigo QR',
+            'QR-code access control for gyms'
+          )}
+        </p>
+        <div className="chips">
+          {['React Native', 'TypeScript', 'SQLite', 'Local First', 'C#', '.NET', 'ASP.NET Core', 'React', 'Vite', 'QR', 'Notificaciones'].map((x) => (
+            <span className="chip" key={x}>{x}</span>
+          ))}
+        </div>
+        <h2>{t('Que es', 'What it is')}</h2>
+        <p>
+          {t(
+            'Una aplicacion movil que regula la entrada de los socios a un gimnasio. Cada socio tiene un codigo QR que lo identifica; al escanearlo, la app comprueba su plan, si sigue inscrito y si su plazo no ha vencido, y decide si puede pasar.',
+            'A mobile app that regulates member entry to a gym. Each member has a QR code that identifies them; when it is scanned, the app checks their plan, whether they are still enrolled and whether their term has expired, and decides whether they can come in.'
+          )}
+        </p>
+        <h2>{t('Funcionalidades', 'Features')}</h2>
+        <ul>
+          <li>
+            {t(
+              'Acceso con QR: identifica al socio, valida su plan y su vigencia y registra cada entrada.',
+              'QR entry: identifies the member, validates their plan and validity and records every check-in.'
+            )}
+          </li>
+          <li>
+            {t(
+              'Sistema de notificaciones construido sobre los mismos datos de autenticacion, por ejemplo avisos de plan por vencer.',
+              'Notification system built on the same authentication data, such as expiring-plan reminders.'
+            )}
+          </li>
+          <li>
+            {t(
+              'El resultado de cada validacion alimenta el resto de funciones de la app.',
+              'The outcome of every validation feeds the rest of the app’s features.'
+            )}
+          </li>
+        </ul>
+        <h2>{t('Como esta construido', 'How it is built')}</h2>
+        <ul>
+          <li>
+            {t(
+              'React Native con TypeScript.',
+              'React Native with TypeScript.'
+            )}
+          </li>
+          <li>
+            {t(
+              'API en C# y .NET, y un cliente web en React con Vite.',
+              'API in C# and .NET, plus a web client in React with Vite.'
+            )}
+          </li>
+          <li>
+            {t(
+              'Local First: los datos viven en SQLite en el dispositivo, asi que la validacion funciona aunque no haya conexion en la puerta del gimnasio.',
+              'Local First: data lives in SQLite on the device, so validation works even without a connection at the gym door.'
+            )}
+          </li>
+        </ul>
+        <h2>{t('Lo que aprendi', 'What I learned')}</h2>
+        <ul>
+          <li>
+            {t(
+              'Pensar primero en lo local cambia el modelo: la fuente de verdad esta en el dispositivo y la sincronizacion es un detalle posterior.',
+              'Thinking local first changes the model: the source of truth is on the device and syncing comes later.'
+            )}
+          </li>
+          <li>
+            {t(
+              'Un acceso denegado necesita una razon clara (plan vencido, no inscrito), no solo un “no”.',
+              'A denied entry needs a clear reason (expired plan, not enrolled), not just a “no”.'
+            )}
+          </li>
+        </ul>
+        <RepoLink url={REPOS.spotta} t={t} />
+      </>
+    ),
+  },
+
   cv: {
     id: 'cv',
     title: 'cv.pdf',
@@ -507,6 +616,13 @@ export const WINDOWS = {
             {t(
               'Monolito modular en .NET sobre remates judiciales del Peru.',
               'Modular .NET monolith over Peruvian judicial auctions.'
+            )}
+          </li>
+          <li>
+            <strong>Spotta</strong> —{' '}
+            {t(
+              'App movil Local First en React Native para el acceso a gimnasios con QR.',
+              'Local-first React Native app for gym entry via QR codes.'
             )}
           </li>
         </ul>
