@@ -498,7 +498,7 @@ export const WINDOWS = {
           )}
         </p>
         <div className="chips">
-          {['React Native', 'TypeScript', 'SQLite', 'Local First', 'C#', '.NET', 'ASP.NET Core', 'React', 'Vite', 'QR', 'Notificaciones'].map((x) => (
+          {['React Native', 'JavaScript', 'TypeScript', 'SQLite', 'Local First', 'C#', '.NET', 'ASP.NET Core', 'React', 'Vite', 'QR', 'Notificaciones'].map((x) => (
             <span className="chip" key={x}>{x}</span>
           ))}
         </div>
@@ -534,8 +534,8 @@ export const WINDOWS = {
         <ul>
           <li>
             {t(
-              'React Native con TypeScript.',
-              'React Native with TypeScript.'
+              'React Native con JavaScript y TypeScript.',
+              'React Native with JavaScript and TypeScript.'
             )}
           </li>
           <li>
