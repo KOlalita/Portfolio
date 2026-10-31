@@ -229,8 +229,7 @@ detrás, y la minimiza si ya estaba enfocada.
 
 ### Pendientes de contenido real
 
-- **Foto**: `PROFILE.avatar` apunta a un gatito de `placecats.com`. Sustituir
-  por una foto propia en `public/` (por ejemplo `'/avatar.jpg'`); si la imagen
+- **Foto**: `PROFILE.avatar` apunta a `public/avatar.webp`; si la imagen
   falla, `Welcome.jsx` cae en un avatar SVG local.
 - **Repositorios**: la constante `REPOS` de `content.jsx` apunta ya a
   `github.com/KOlalita/CutZen`, `github.com/KOlalita/RemaFeed` y `github.com/KOlalita/Spotta`. Pon `null` si

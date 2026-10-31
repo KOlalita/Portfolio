@@ -20,8 +20,8 @@ export const PROFILE = {
    * `npm run cv:render` cada vez que cambie el PDF.
    */
   cvPages: [1, 2, 3, 4, 5].map((n) => import.meta.env.BASE_URL + 'cv-page-' + n + '.webp'),
-  /* Placeholder: sustituir por una foto propia en public/ (ej. '/avatar.jpg'). */
-  avatar: 'https://placecats.com/400/400',
+  /* Foto de perfil, en public/. */
+  avatar: import.meta.env.BASE_URL + 'avatar.webp',
 }
 
 /*
@@ -584,42 +584,47 @@ export const WINDOWS = {
           {PROFILE.name} · {PROFILE.location}
         </p>
 
+        <h2>{t('Experiencia', 'Experience')}</h2>
+        <ul>
+          <li>
+            <strong>03/2026 — 07/2026</strong> · AQPMail, Arequipa —{' '}
+            {t(
+              'Desarrollador de Software: ayudante de informatica y mantenimiento de software interno, en sistemas de distribucion de paquetes.',
+              'Software Developer: IT assistant and internal software maintenance, on package-distribution systems.'
+            )}
+          </li>
+        </ul>
+
         <h2>{t('Formacion', 'Education')}</h2>
         <ul>
           <li>
-            <strong>2025 — 2026</strong> · {t('Tecsup, Lima', 'Tecsup, Lima')} —{' '}
+            <strong>2025</strong> · Tecsup —{' '}
             {t(
-              'Desarrollador de Software Full-Stack en C#. 250 h online, metodologias agiles. Nivel 4 EQF-MEC.',
-              'Full-Stack Software Developer in C#. 250 h online, agile methodologies. EQF level 4.'
+              'Desarrollador Web Fullstack en C# .NET. 250 h online, metodologias agiles.',
+              'Full-Stack Web Developer in C# .NET. 250 h online, agile methodologies.'
             )}
           </li>
           <li>
-            <strong>2012 — 2025</strong> · {t('Colegio Internacional Peruano Britanico, Arequipa', 'Colegio Internacional Peruano Britanico, Arequipa')} —{' '}
-            {t(
-              'Educacion basica completa con enfoque bilingue ingles/español.',
-              'Full primary and secondary education with a bilingual English/Spanish focus.'
-            )}
-          </li>
-          <li>
-            <strong>2024 — 2026</strong> · {t('Formación Autodidacta', 'Self-taught Education')} —{' '}
+            <strong>2012 — 2025</strong> · Colegio Internacional Peruano Britanico, Arequipa —{' '}
+            {t('Educacion basica regular.', 'Regular primary and secondary education.')}
           </li>
         </ul>
 
         <h2>{t('Proyectos', 'Projects')}</h2>
         <ul>
           <li>
-            <strong>CutZen</strong> —{' '}
+            <strong>CutZen</strong> (06/2026) —{' '}
             {t('API .NET y cliente React para reservas de barberia.', '.NET API and React client for barbershop booking.')}
           </li>
           <li>
-            <strong>RemaFeed</strong> —{' '}
+            <strong>RemaFeed</strong> (09/2026) —{' '}
             {t(
               'Monolito modular en .NET sobre remates judiciales del Peru.',
               'Modular .NET monolith over Peruvian judicial auctions.'
             )}
           </li>
           <li>
-            <strong>Spotta</strong> —{' '}
+            <strong>Spotta</strong> (10/2026) —{' '}
             {t(
               'App movil Local First en React Native para el acceso a gimnasios con QR.',
               'Local-first React Native app for gym entry via QR codes.'
@@ -627,21 +632,34 @@ export const WINDOWS = {
           </li>
         </ul>
 
+        <h2>{t('Logros', 'Achievements')}</h2>
+        <ul>
+          <li>
+            {t(
+              'Ganador del Hackathon Municipal Escolar 2025 (software educativo con base de datos y dashboard).',
+              'Winner of the 2025 School Municipal Hackathon (educational software with a database and dashboard).'
+            )}
+          </li>
+          <li>
+            {t(
+              'Best Delegate en INTERMUN 2025 y MUNSUR 2025 (Modelos de Naciones Unidas).',
+              'Best Delegate at INTERMUN 2025 and MUNSUR 2025 (Model United Nations).'
+            )}
+          </li>
+        </ul>
+
         <h2>{t('Capacidades', 'Capabilities')}</h2>
         <ul>
-          <li>{t('Trabajo en equipo y metodologias agiles', 'Teamwork and agile methodologies')}</li>
-          <li>
-            {t('Especificacion y analisis de requerimientos', 'Software requirements specification and analysis')}
-          </li>
-          <li>{t('Resolucion de problemas y pensamiento logico', 'Problem solving and logical thinking')}</li>
-          <li>{t('Gestion de incidentes tecnicos', 'Technical incident management')}</li>
+          <li>{t('Pensamiento critico y resolucion de problemas complejos', 'Critical thinking and complex problem solving')}</li>
+          <li>{t('Desarrollo de software y automatizacion de procesos', 'Software development and process automation')}</li>
+          <li>{t('Liderazgo, negociacion y aprendizaje autonomo', 'Leadership, negotiation and self-directed learning')}</li>
         </ul>
 
         <h2>{t('Idiomas', 'Languages')}</h2>
         <ul>
           <li>{t('Español — nativo', 'Spanish — native')}</li>
           <li>{t('Ingles — B2', 'English — B2')}</li>
-          <li>{t('Frances — A1', 'French — A1')}</li>
+          <li>{t('Frances — A2', 'French — A2')}</li>
         </ul>
 
         <div className="links">
