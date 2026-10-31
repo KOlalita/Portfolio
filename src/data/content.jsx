@@ -19,7 +19,7 @@ export const PROFILE = {
    * Paginas del CV rasterizadas para verlas dentro del sitio. Se regeneran con
    * `npm run cv:render` cada vez que cambie el PDF.
    */
-  cvPages: [import.meta.env.BASE_URL + 'cv-page-1.webp'],
+  cvPages: [1, 2, 3, 4, 5].map((n) => import.meta.env.BASE_URL + 'cv-page-' + n + '.webp'),
   /* Placeholder: sustituir por una foto propia en public/ (ej. '/avatar.jpg'). */
   avatar: 'https://placecats.com/400/400',
 }
